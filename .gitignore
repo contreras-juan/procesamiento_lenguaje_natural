@@ -1,0 +1,12 @@
+.ipynb_checkpoints
+.DS_Store
+*.keras
+*.h5
+*.weights.h5
+__pycache__/
+nltk_data/
+*.bin
+*.safetensors
+checkpoints/
+runs/
+wandb/
