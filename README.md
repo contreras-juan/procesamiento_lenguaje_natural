@@ -114,7 +114,7 @@ Ruta: [`Ejercicios/`](Ejercicios/)
 | 05 | [05_Taller_Embeddings_RNN.ipynb](Ejercicios/05_Taller_Embeddings_RNN.ipynb) | Taller práctico: embeddings, RNN, LSTM y GRU |
 | 06 | [06_Taller_Word2Vec_GloVe_Seq2Seq.ipynb](Ejercicios/06_Taller_Word2Vec_GloVe_Seq2Seq.ipynb) | Taller práctico: Word2Vec, GloVe y Seq2Seq |
 | 07 | [07_Taller_CNN_Texto.ipynb](Ejercicios/07_Taller_CNN_Texto.ipynb) | Taller práctico: redes convolucionales para texto |
-| 08 | [08_Taller_Transformers.ipynb](Ejercicios/08_Taller_Transformers.ipynb) | Taller práctico: atención y Transformers |
+| 08 | [08_Taller_Transformers.ipynb](Ejercicios/08_Taller_Transformers.ipynb) | Taller práctico: atención, Transformers y modelos preentrenados |
 
 ### Soluciones
 
@@ -166,9 +166,9 @@ Entorno recomendado con Python 3 y las siguientes librerías:
 - `nltk`, `spacy` (PLN clásico)
 - `gensim` (Word2Vec y GloVe)
 - `tensorflow` / `keras` (embeddings, RNN, CNN y Seq2Seq)
-- `transformers`, `datasets`, `evaluate` (Hugging Face: BERT, GPT y fine-tuning)
+- `torch`, `transformers` (versión 5 o posterior), `datasets`, `accelerate` (Hugging Face: BERT, GPT, fine-tuning y LLM). Desde su versión 5, `transformers` solo funciona con PyTorch, así que el módulo 4 usa PyTorch para los modelos preentrenados
 
-Cada cuaderno incluye una celda `%pip install` con las librerías que necesita. Para instalar Jupyter:
+Cada cuaderno incluye una celda `%pip install` con las librerías que necesita. Los cuadernos 17 a 19 y el taller 08 descargan modelos de cientos de millones de parámetros: se recomienda ejecutarlos en Google Colab con GPU (*Entorno de ejecución → Cambiar tipo de entorno de ejecución → T4 GPU*). Para instalar Jupyter:
 
 ```bash
 pip install notebook
