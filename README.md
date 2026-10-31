@@ -13,7 +13,7 @@ Autor: [Juan Felipe Contreras](https://www.linkedin.com/in/juanf-contreras/)
 - [Módulo 1. Introducción al PLN](#módulo-1-introducción-al-pln)
 - [Módulo 2. Métodos probabilísticos en PLN](#módulo-2-métodos-probabilísticos-en-pln)
 - [Módulo 3. Modelos secuenciales aplicados a PLN](#módulo-3-modelos-secuenciales-aplicados-a-pln)
-- [Módulo 4. Atención, convolución y modelos preentrenados](#módulo-4-atención-convolución-y-modelos-preentrenados)
+- [Módulo 4. Atención y modelos preentrenados](#módulo-4-atención-y-modelos-preentrenados)
 - [Talleres prácticos](#talleres-prácticos)
 - [Proyectos de aplicación](#proyectos-de-aplicación)
 - [Cómo usar este material](#cómo-usar-este-material)
@@ -36,7 +36,7 @@ El contenido está organizado en cuatro módulos de dos semanas cada uno. Cada m
 
 ```text
 procesamiento_lenguaje_natural/
-├── Cuadernos/              # Notas de clase (00–19), organizadas por módulo
+├── Cuadernos/              # Notas de clase (00–20), organizadas por módulo
 ├── Ejercicios/             # Talleres prácticos para estudiantes
 │   └── Soluciones/         # Soluciones de referencia
 ├── Proyectos/              # Proyecto de aplicación de IA por módulo
@@ -87,17 +87,18 @@ Semanas 5–6 · Ruta: [`Cuadernos/`](Cuadernos/)
 
 ---
 
-## Módulo 4. Atención, convolución y modelos preentrenados
+## Módulo 4. Atención y modelos preentrenados
 
 Semanas 7–8 · Ruta: [`Cuadernos/`](Cuadernos/)
 
 | # | Cuaderno | Tema |
 |---|----------|------|
-| 15 | [15_CNN_Texto.ipynb](Cuadernos/15_CNN_Texto.ipynb) | Redes convolucionales para texto |
-| 16 | [16_Atencion_Transformers.ipynb](Cuadernos/16_Atencion_Transformers.ipynb) | Atención y Transformers |
-| 17 | [17_BERT_GPT_Fine_Tuning.ipynb](Cuadernos/17_BERT_GPT_Fine_Tuning.ipynb) | Modelos preentrenados y fine-tuning: BERT y GPT |
-| 18 | [18_Aplicaciones_Preentrenados.ipynb](Cuadernos/18_Aplicaciones_Preentrenados.ipynb) | Clasificación, traducción, sumarización y respuesta a preguntas |
-| 19 | [19_Etica_PLN_LLM.ipynb](Cuadernos/19_Etica_PLN_LLM.ipynb) | Ética en PLN y grandes modelos de lenguaje |
+| 15 | [15_Atencion_Transformers.ipynb](Cuadernos/15_Atencion_Transformers.ipynb) | Atención y Transformers |
+| 16 | [16_BERT_GPT_Fine_Tuning.ipynb](Cuadernos/16_BERT_GPT_Fine_Tuning.ipynb) | Modelos preentrenados y fine-tuning: BERT y GPT |
+| 17 | [17_Aplicaciones_Preentrenados.ipynb](Cuadernos/17_Aplicaciones_Preentrenados.ipynb) | Clasificación, traducción, sumarización y respuesta a preguntas |
+| 18 | [18_Prompt_Engineering_LLM_APIs.ipynb](Cuadernos/18_Prompt_Engineering_LLM_APIs.ipynb) | Prompt engineering y acceso a LLM con APIs (OpenAI, Google y Ollama) |
+| 19 | [19_LangChain_LangGraph_Agentes.ipynb](Cuadernos/19_LangChain_LangGraph_Agentes.ipynb) | LangChain y LangGraph: tool calling, RAG y agentes |
+| 20 | [20_Etica_PLN_LLM.ipynb](Cuadernos/20_Etica_PLN_LLM.ipynb) | Ética en PLN y grandes modelos de lenguaje |
 
 ---
 
@@ -113,8 +114,7 @@ Ruta: [`Ejercicios/`](Ejercicios/)
 | 04 | [04_Taller_HMM_MEMM.ipynb](Ejercicios/04_Taller_HMM_MEMM.ipynb) | Taller práctico: HMM, Viterbi y MEMM |
 | 05 | [05_Taller_Embeddings_RNN.ipynb](Ejercicios/05_Taller_Embeddings_RNN.ipynb) | Taller práctico: embeddings, RNN, LSTM y GRU |
 | 06 | [06_Taller_Word2Vec_GloVe_Seq2Seq.ipynb](Ejercicios/06_Taller_Word2Vec_GloVe_Seq2Seq.ipynb) | Taller práctico: Word2Vec, GloVe y Seq2Seq |
-| 07 | [07_Taller_CNN_Texto.ipynb](Ejercicios/07_Taller_CNN_Texto.ipynb) | Taller práctico: redes convolucionales para texto |
-| 08 | [08_Taller_Transformers.ipynb](Ejercicios/08_Taller_Transformers.ipynb) | Taller práctico: atención, Transformers y modelos preentrenados |
+| 07 | [07_Taller_Transformers.ipynb](Ejercicios/07_Taller_Transformers.ipynb) | Taller práctico: atención, Transformers y modelos preentrenados |
 
 ### Soluciones
 
@@ -128,8 +128,7 @@ Ruta: [`Ejercicios/Soluciones/`](Ejercicios/Soluciones/)
 | 04 | [04_Taller_HMM_MEMM_Solucion.ipynb](Ejercicios/Soluciones/04_Taller_HMM_MEMM_Solucion.ipynb) | Solución de referencia del taller de HMM y MEMM |
 | 05 | [05_Taller_Embeddings_RNN_Solucion.ipynb](Ejercicios/Soluciones/05_Taller_Embeddings_RNN_Solucion.ipynb) | Solución de referencia del taller de embeddings y RNN |
 | 06 | [06_Taller_Word2Vec_GloVe_Seq2Seq_Solucion.ipynb](Ejercicios/Soluciones/06_Taller_Word2Vec_GloVe_Seq2Seq_Solucion.ipynb) | Solución de referencia del taller de Word2Vec, GloVe y Seq2Seq |
-| 07 | [07_Taller_CNN_Texto_Solucion.ipynb](Ejercicios/Soluciones/07_Taller_CNN_Texto_Solucion.ipynb) | Solución de referencia del taller de CNN para texto |
-| 08 | [08_Taller_Transformers_Solucion.ipynb](Ejercicios/Soluciones/08_Taller_Transformers_Solucion.ipynb) | Solución de referencia del taller de Transformers |
+| 07 | [07_Taller_Transformers_Solucion.ipynb](Ejercicios/Soluciones/07_Taller_Transformers_Solucion.ipynb) | Solución de referencia del taller de Transformers |
 
 ---
 
@@ -165,10 +164,12 @@ Entorno recomendado con Python 3 y las siguientes librerías:
 - `numpy`, `pandas`, `matplotlib`, `scikit-learn`
 - `nltk`, `spacy` (PLN clásico)
 - `gensim` (Word2Vec y GloVe)
-- `tensorflow` / `keras` (embeddings, RNN, CNN y Seq2Seq)
+- `tensorflow` / `keras` (embeddings, RNN y Seq2Seq)
+- `openai`, `google-genai`, `ollama`, `python-dotenv`, `pydantic` (acceso a LLM por API y en local, cuaderno 18)
+- `langchain`, `langgraph`, `langchain-openai`, `langchain-google-genai`, `langchain-ollama` (aplicaciones y agentes con LLM, cuaderno 19)
 - `torch`, `transformers` (versión 5 o posterior), `datasets`, `accelerate` (Hugging Face: BERT, GPT, fine-tuning y LLM). Desde su versión 5, `transformers` solo funciona con PyTorch, así que el módulo 4 usa PyTorch para los modelos preentrenados
 
-Cada cuaderno incluye una celda `%pip install` con las librerías que necesita. Los cuadernos 17 a 19 y el taller 08 descargan modelos de cientos de millones de parámetros: se recomienda ejecutarlos en Google Colab con GPU (*Entorno de ejecución → Cambiar tipo de entorno de ejecución → T4 GPU*). Para instalar Jupyter:
+Cada cuaderno incluye una celda `%pip install` con las librerías que necesita. Los cuadernos 16, 17 y 20 y el taller 07 descargan modelos de cientos de millones de parámetros: se recomienda ejecutarlos en Google Colab con GPU (*Entorno de ejecución → Cambiar tipo de entorno de ejecución → T4 GPU*). Los cuadernos 18 y 19 no descargan modelos, pero necesitan claves de API (`OPENAI_API_KEY` y `GOOGLE_API_KEY` en un archivo `.env`, que no se sube a Git) y, para la parte local, [Ollama](https://ollama.com) instalado. Para instalar Jupyter:
 
 ```bash
 pip install notebook
