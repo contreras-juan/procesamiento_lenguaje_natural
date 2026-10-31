@@ -10,3 +10,6 @@ nltk_data/
 checkpoints/
 runs/
 wandb/
+
+# Credenciales locales (claves de API): nunca se suben al repositorio
+.env
