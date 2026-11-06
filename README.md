@@ -36,7 +36,7 @@ El contenido está organizado en cuatro módulos de dos semanas cada uno. Cada m
 
 ```text
 procesamiento_lenguaje_natural/
-├── Cuadernos/              # Notas de clase (00–20), organizadas por módulo
+├── Cuadernos/              # Notas de clase (00–22), organizadas por módulo
 ├── Ejercicios/             # Talleres prácticos para estudiantes
 │   └── Soluciones/         # Soluciones de referencia
 ├── Proyectos/              # Proyecto de aplicación de IA por módulo
@@ -98,7 +98,9 @@ Semanas 7–8 · Ruta: [`Cuadernos/`](Cuadernos/)
 | 17 | [17_Aplicaciones_Preentrenados.ipynb](Cuadernos/17_Aplicaciones_Preentrenados.ipynb) | Clasificación, traducción, sumarización y respuesta a preguntas |
 | 18 | [18_Prompt_Engineering_LLM_APIs.ipynb](Cuadernos/18_Prompt_Engineering_LLM_APIs.ipynb) | Prompt engineering y acceso a LLM con APIs (OpenAI, Google y Ollama) |
 | 19 | [19_LangChain_LangGraph_Agentes.ipynb](Cuadernos/19_LangChain_LangGraph_Agentes.ipynb) | LangChain y LangGraph: tool calling, RAG y agentes |
-| 20 | [20_Etica_PLN_LLM.ipynb](Cuadernos/20_Etica_PLN_LLM.ipynb) | Ética en PLN y grandes modelos de lenguaje |
+| 20 | [20_RAG_Chunking_Estrategias.ipynb](Cuadernos/20_RAG_Chunking_Estrategias.ipynb) | RAG a fondo: estrategias de chunking, de recuperación y tipos de RAG |
+| 21 | [21_Bases_Datos_Vectoriales.ipynb](Cuadernos/21_Bases_Datos_Vectoriales.ipynb) | Bases de datos vectoriales: índices (IVF, HNSW), FAISS, Chroma, Qdrant, LanceDB, Milvus, frameworks y proveedores |
+| 22 | [22_Etica_PLN_LLM.ipynb](Cuadernos/22_Etica_PLN_LLM.ipynb) | Ética en PLN y grandes modelos de lenguaje |
 
 ---
 
@@ -167,9 +169,11 @@ Entorno recomendado con Python 3 y las siguientes librerías:
 - `tensorflow` / `keras` (embeddings, RNN y Seq2Seq)
 - `openai`, `google-genai`, `ollama`, `python-dotenv`, `pydantic` (acceso a LLM por API y en local, cuaderno 18)
 - `langchain`, `langgraph`, `langchain-openai`, `langchain-google-genai`, `langchain-ollama` (aplicaciones y agentes con LLM, cuaderno 19)
+- `faiss-cpu`, `hnswlib`, `chromadb`, `qdrant-client`, `lancedb`, `pymilvus`, `langchain-chroma`, `langchain-qdrant`, `llama-index-core` (bases de datos vectoriales y frameworks, cuaderno 21)
+- `networkx` (grafo de conocimiento de GraphRAG, cuaderno 20; el resto de ese cuaderno usa solo `numpy` y los SDK del cuaderno 18)
 - `torch`, `transformers` (versión 5 o posterior), `datasets`, `accelerate` (Hugging Face: BERT, GPT, fine-tuning y LLM). Desde su versión 5, `transformers` solo funciona con PyTorch, así que el módulo 4 usa PyTorch para los modelos preentrenados
 
-Cada cuaderno incluye una celda `%pip install` con las librerías que necesita. Los cuadernos 16, 17 y 20 y el taller 07 descargan modelos de cientos de millones de parámetros: se recomienda ejecutarlos en Google Colab con GPU (*Entorno de ejecución → Cambiar tipo de entorno de ejecución → T4 GPU*). Los cuadernos 18 y 19 no descargan modelos, pero necesitan claves de API (`OPENAI_API_KEY` y `GOOGLE_API_KEY` en un archivo `.env`, que no se sube a Git) y, para la parte local, [Ollama](https://ollama.com) instalado. Para instalar Jupyter:
+Cada cuaderno incluye una celda `%pip install` con las librerías que necesita. Los cuadernos 16, 17 y 22 y el taller 07 descargan modelos de cientos de millones de parámetros: se recomienda ejecutarlos en Google Colab con GPU (*Entorno de ejecución → Cambiar tipo de entorno de ejecución → T4 GPU*). Los cuadernos 18, 19, 20 y 21 no descargan modelos, pero necesitan claves de API (`OPENAI_API_KEY` y `GOOGLE_API_KEY` en un archivo `.env`, que no se sube a Git) y, para la parte local, [Ollama](https://ollama.com) instalado. Para instalar Jupyter:
 
 ```bash
 pip install notebook
